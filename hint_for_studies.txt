@@ -1,0 +1,45 @@
+path(<str:temp_test>, views.horoscope, name=temp_test) - переменная, ссылка на вьюшку, имя для ссылки
+
+from django.http import HttpResponseRedirect - перенаправляет запрос в случае 1/Овен...2/Телец
+from django.urls import reverse
+redirect_url = reverse('horoscope_name', args=(name_zodiac,)) - сконструированный url
+return HttpResponseRedirect(redirect_url)
+
+МОДЕЛИ
+from django.db import models
+
+
+class News(models.Model):
+    title = models.CharField(max_length=150) - небольшое текстовое поле
+    content = models.TextField(blank=True) -- Большое текстовое поле. blank -- обязательно/необязательно для заполнения
+    created_at = models.DateTimeField(auto_now_add=True) -- DateTime. auto_now_add -- создаётся один раз при создании
+    updated_at = models.DateTimeField(auto_now=True) -- DateTime. auto_now -- обновляется при изменении
+    photo = models.ImageField(upload_to='photos/%Y/%m/%d')
+    is_published = models.BooleanField(default=True)
+
+Связь с ДБ
+
+>>>>>>> python manage.py shell -- переход в терминал джанго
+>>>>>>> from news.models import News -- импорт моделей с которыми работать
+In [2]: News(title='Новость 1', content='Контент новости 1') -- ленивый SQL запрос
+In [7]: news1.save() -- выполнение SQL запроса
+In [8]: news1.id -- посмотреть какой ID присовен
+Out[8]: 1
+
+In [9]: from django.db import connection -- список с выполненными SQL запросами
+In [10]: connection.queries
+
+news4 = News.objects.create(title='Новость 4', content='Контент новости 4') -- альтернативный метод создания
+
+News.objects.all() -- все созданные объекты в моделе
+News.objects.filter(title='News 5') -- возвращает отфилтрованный запрос
+News.objects.get(pk=1) -- возвращает одну запись
+
+News.objects.get(pk=4)
+news4 = _
+news4.title = 'Новость 4' -- изменение записи
+news5.save()
+
+News.objects.order_by('title') -- сортировка как в SQL
+News.objects.order_by('-title')
+News.objects.exclude(title = 'News 5') -- всё за исключением
