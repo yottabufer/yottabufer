@@ -10,7 +10,7 @@ MODELS--MODELS--MODELS--MODELS--MODELS--MODELS--MODELS--MODELS--MODELS--MODELS--
 from django.db import models
 
 class News(models.Model):
-    title = models.CharField(max_length=150) - небольшое текстовое поле
+    title = models.CharField(max_length=150, db_index=True) - небольшое текстовое поле, для быстрого поиска
     content = models.TextField(blank=True) -- Большое текстовое поле. blank -- обязательно/необязательно для заполнения
     created_at = models.DateTimeField(auto_now_add=True) -- DateTime. auto_now_add -- создаётся один раз при создании
     updated_at = models.DateTimeField(auto_now=True) -- DateTime. auto_now -- обновляется при изменении
