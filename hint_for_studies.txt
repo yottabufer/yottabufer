@@ -27,6 +27,10 @@ class Meta: -- подкласс в моделей в models.py
 
 class Category(models.Model): -- связь моделей
     title = models.CharField(max_lenght=150, db_index=True) -- индекс для быстрой связи
+    
+    
+news.apps.py!!
+verbose_name = 'Новость' -- название приложения на русском
 
 Связь с БД
 
