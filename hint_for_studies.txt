@@ -67,7 +67,7 @@ class NewsAdmin(admin.ModelAdmin):
     list_editable = ('is_published', ) -- быстрое редактировение на странице админки
     list_filter = ('is_published', 'category') -- добавление фильтров по выбраным категориям
 
-admin.site.register(News) -- регистрация приложения для админке в admin.py
+admin.site.register(News, NewsAdmin) -- регистрация приложения для админке в admin.py
 admin.site.register(Category)
 
 
