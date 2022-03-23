@@ -77,3 +77,4 @@ admin.site.register(Category)
 
 
 https://getbootstrap.com/docs/5.1/components/card/
+https://github.com/TheDeadOne/django-counter-example -- счётчик посещений
