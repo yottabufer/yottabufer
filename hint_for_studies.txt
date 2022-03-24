@@ -75,7 +75,7 @@ class NewsAdmin(admin.ModelAdmin):
 admin.site.register(News, NewsAdmin) -- регистрация приложения для админке в admin.py
 admin.site.register(Category)
 
-HIDE_MEDIA--HIDE_MEDIA--HIDE_MEDIA--HIDE_MEDIA--HIDE_MEDIA--HIDE_MEDIA--HIDE_MEDIA--HIDE_MEDIA--HIDE_MEDIA--HIDE_MEDIA--
+SHOW_MEDIA--SHOW_MEDIA--SHOW_MEDIA--SHOW_MEDIA--SHOW_MEDIA--SHOW_MEDIA--SHOW_MEDIA--SHOW_MEDIA--SHOW_MEDIA--SHOW_MEDIA--
 urls.py
 from django.conf.urls.static import static
 from django.conf import settings
