@@ -85,5 +85,21 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
 
+SIMPLE_TAGS--SIMPLE_TAGS--SIMPLE_TAGS--SIMPLE_TAGS--SIMPLE_TAGS--SIMPLE_TAGS--SIMPLE_TAGS--SIMPLE_TAGS--SIMPLE_TAGS--
+news/templatetags/news_tags.py
+from django import template
+from news.models import Category
+
+register = template.Library()
+
+@register.simple_tag()
+def get_categories():
+    return Category.objects.all()
+    
+templates/inc/_sidebar.html
+{% load news_tags %}
+{% get_categories as categories %}
+
+
 https://getbootstrap.com/docs/5.1/components/card/
 https://github.com/TheDeadOne/django-counter-example -- счётчик посещений
