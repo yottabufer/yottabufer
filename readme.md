@@ -16,4 +16,5 @@
 ![PostgreSQL](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
 ![unittest](https://img.shields.io/badge/unittest-blue.svg?style=for-the-badge&logo=python&logoColor=white)
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?yottabufer&layout=compact&theme=vision-friendly-dark)](https://github.com/anuraghazra/github-readme-stats)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=yottabufer&layout=compact&theme=vision-friendly-dark)](https://github.com/anuraghazra/github-readme-stats)
+
