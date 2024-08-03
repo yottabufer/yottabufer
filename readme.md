@@ -20,7 +20,7 @@
 
 
 ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
-![AUTHZED](https://img.shields.io/badge/authzed-005571?style=for-the-badge&logo=authzed)
+![AUTHZED](https://img.shields.io/badge/authzed-EF476F?style=for-the-badge&logo=authzed)
 ![Docker Compose](https://img.shields.io/badge/docker%20compose-green.svg?style=for-the-badge&logo=docker&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
 ![unittest](https://img.shields.io/badge/unittest-blue.svg?style=for-the-badge&logo=python&logoColor=white)
