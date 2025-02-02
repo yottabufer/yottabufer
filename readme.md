@@ -12,6 +12,7 @@
 ![FatApi](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)
 ![pydantic](https://img.shields.io/badge/pydantic-3772FF?style=for-the-badge&logo=pydantic)
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Apache Kafka Badge](https://img.shields.io/badge/Apache%20Kafka-231F20?logo=apachekafka&logoColor=fff&style=plastic)
 ![Django](https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white)
 ![DRF](https://img.shields.io/badge/DRF-red.svg?style=for-the-badge&logo=django&logoColor=white)
 
